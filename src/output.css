@@ -1496,6 +1496,9 @@
   .gap-\[10\%\] {
     gap: 10%;
   }
+  .gap-\[20\%\] {
+    gap: 20%;
+  }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 1;
