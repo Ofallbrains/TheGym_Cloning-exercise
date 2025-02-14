@@ -611,6 +611,9 @@
   .top-\[30\%\] {
     top: 30%;
   }
+  .top-\[40\%\] {
+    top: 40%;
+  }
   .top-\[50\%\] {
     top: 50%;
   }
@@ -818,6 +821,18 @@
   .mt-32 {
     margin-top: calc(var(--spacing) * 32);
   }
+  .mt-36 {
+    margin-top: calc(var(--spacing) * 36);
+  }
+  .mt-40 {
+    margin-top: calc(var(--spacing) * 40);
+  }
+  .mt-44 {
+    margin-top: calc(var(--spacing) * 44);
+  }
+  .mt-64 {
+    margin-top: calc(var(--spacing) * 64);
+  }
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
   }
@@ -917,14 +932,11 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-32 {
+    height: calc(var(--spacing) * 32);
+  }
   .h-64 {
     height: calc(var(--spacing) * 64);
-  }
-  .h-\[50px\] {
-    height: 50px;
-  }
-  .h-\[5px\] {
-    height: 5px;
   }
   .h-\[10px\] {
     height: 10px;
@@ -932,8 +944,8 @@
   .h-\[20\%\] {
     height: 20%;
   }
-  .h-\[100px\] {
-    height: 100px;
+  .h-\[50px\] {
+    height: 50px;
   }
   .h-\[200\%\] {
     height: 200%;
@@ -941,11 +953,17 @@
   .h-\[200px\] {
     height: 200px;
   }
+  .h-\[2px\] {
+    height: 2px;
+  }
+  .h-\[5px\] {
+    height: 5px;
+  }
   .h-\[20px\] {
     height: 20px;
   }
-  .h-\[2px\] {
-    height: 2px;
+  .h-\[100px\] {
+    height: 100px;
   }
   .h-\[400px\] {
     height: 400px;
@@ -958,6 +976,9 @@
   }
   .h-\[800px\] {
     height: 800px;
+  }
+  .h-\[900px\] {
+    height: 900px;
   }
   .h-full {
     height: 100%;
@@ -1816,6 +1837,15 @@
     --tw-gradient-position: in oklab;
     background-image: radial-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\'\'\)\] {
+    background-image: url('');
+  }
+  .bg-\[url\(\'https\:\/\/www\.upenn\.edu\/sites\/default\/files\/styles\/crop_5x3\/public\/2025-02\/avian-bird-flu\.jpg\?h\=d0d32c2c\&amp\;itok\=MaefnWJg\'\)\] {
+    background-image: url('https://www.upenn.edu/sites/default/files/styles/crop_5x3/public/2025-02/avian-bird-flu.jpg?h=d0d32c2c&amp;itok=MaefnWJg');
+  }
+  .bg-\[url\(\'https\:\/\/www\.upenn\.edu\/sites\/default\/files\/styles\/crop_5x3\/public\/2025-02\/avian-bird-flu\.jpg\?h\=d0d32c2c\&itok\=MaefnWJg\'\)\] {
+    background-image: url('https://www.upenn.edu/sites/default/files/styles/crop_5x3/public/2025-02/avian-bird-flu.jpg?h=d0d32c2c&itok=MaefnWJg');
+  }
   .bg-\[url\(\'https\:\/\/www\.upenn\.edu\/themes\/custom\/penn_global\/assets\/img\/footer-16\.png\'\)\] {
     background-image: url('https://www.upenn.edu/themes/custom/penn_global/assets/img/footer-16.png');
   }
@@ -2008,6 +2038,9 @@
   }
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
@@ -2389,8 +2422,17 @@
   .scheme-only-light {
     color-scheme: only light;
   }
+  .opacity-0 {
+    opacity: 0%;
+  }
   .opacity-5 {
     opacity: 5%;
+  }
+  .opacity-80 {
+    opacity: 80%;
+  }
+  .opacity-100 {
+    opacity: 100%;
   }
   .mix-blend-plus-darker {
     mix-blend-mode: plus-darker;
@@ -2693,6 +2735,82 @@
   }
   .transform-view {
     transform-box: view-box;
+  }
+  .before\:absolute {
+    &::before {
+      content: var(--tw-content);
+      position: absolute;
+    }
+  }
+  .before\:top-0 {
+    &::before {
+      content: var(--tw-content);
+      top: calc(var(--spacing) * 0);
+    }
+  }
+  .before\:left-0 {
+    &::before {
+      content: var(--tw-content);
+      left: calc(var(--spacing) * 0);
+    }
+  }
+  .before\:h-\[400px\] {
+    &::before {
+      content: var(--tw-content);
+      height: 400px;
+    }
+  }
+  .before\:h-\[500px\] {
+    &::before {
+      content: var(--tw-content);
+      height: 500px;
+    }
+  }
+  .before\:h-\[900px\] {
+    &::before {
+      content: var(--tw-content);
+      height: 900px;
+    }
+  }
+  .before\:w-full {
+    &::before {
+      content: var(--tw-content);
+      width: 100%;
+    }
+  }
+  .before\:bg-gradient-to-t {
+    &::before {
+      content: var(--tw-content);
+      --tw-gradient-position: to top in oklab;
+      background-image: linear-gradient(var(--tw-gradient-stops));
+    }
+  }
+  .before\:from-\[rgb\(0\,0\,0\,0\.7\)\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-gradient-from: rgb(0,0,0,0.7);
+      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    }
+  }
+  .before\:to-\[rgb\(0\,0\,0\,0\.5\)\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-gradient-to: rgb(0,0,0,0.5);
+      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    }
+  }
+  .before\:bg-no-repeat {
+    &::before {
+      content: var(--tw-content);
+      background-repeat: no-repeat;
+    }
+  }
+  .before\:content-\[\'\'\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-content: '';
+      content: var(--tw-content);
+    }
   }
   .hover\:underline {
     &:hover {
@@ -3008,4 +3126,51 @@
 @property --tw-duration {
   syntax: "*";
   inherits: false;
+}
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
 }
