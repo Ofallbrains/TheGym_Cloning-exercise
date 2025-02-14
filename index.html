@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
 
-    <footer  >
+    <footer class="w-full">
 
         <div class="bg-[#011F5B] text-center py-24 px-12 text-white">
             <h1 class="text-2xl font-light">Equal Opportunity and Nondiscrimination at Penn</h1>
-            <p class="mt-4 leading-8 font-light">The University of Pennsylvania values diversity and seeks talented students, faculty and staff with
+            <p class="mt-4 leading-8 font-light">The University of Pennsylvania values diversity and seeks talented
+                students, faculty and staff with
                 diverse backgrounds, experiences, and perspectives. The University of Pennsylvania does not discriminate
                 on the basis of race, color, sex, sexual orientation, gender identity, religion, creed, national or
                 ethnic origin, citizenship status, age, disability, veteran status or any other legally protected class
@@ -22,56 +26,71 @@
                 this policy should be directed to the Executive Director of the Office of Affirmative Action and Equal
                 Opportunity Programs, Franklin Building, 3451 Walnut Street,
                 Suite 421, Philadelphia, PA 19104-6106; or (215) 898-6993 (Voice).</p>
-            <button>NONDISCRIMINATION STATEMENT</button>
+            <button class="mt-12 text-sm rounded-full border-2 border-gray-400 p-6">NONDISCRIMINATION STATEMENT</button>
         </div>
+        <div>
 
-        <div class="text-white bg-red-200 pt-12 leading-12 w-full gap-6 flex">
-            <div >
-                <div class="flex">
-                    <img src="https://www.upenn.edu/themes/custom/penn_starter/assets/img/UPenn-logo.svg" alt="">
+            <div class="text-white bg-red-200 py-24 px-8  w-full gap-[10%] flex justify-between">
+                <div>
+                    <div class="flex">
+                        <img src="https://www.upenn.edu/themes/custom/penn_starter/assets/img/UPenn-logo.svg" alt="">
+                    </div>
+
+                    <p>Philadelphia, PA 19104</p>
+                    <p>Telephone: (215) 898-5000</p>
+
+                    <div class="leading-10 mt-8">
+                        <p>CONTACT US</p>
+                        <p>MAPS</p>
+                        <p>PARKING</p>
+                    </div>
                 </div>
 
-                <p>Philadelphia, PA 19104</p>
-                <p>Telephone: (215) 898-5000</p>
+                <div class="flex leading-8 flex-col">
+                    <h1 class="font-light">Navigate</h1>
+                    <a href="#">ALUMNI</a>
+                    <a href="#">ATHLETICS</a>
+                    <a href="#">DIVERSITY</a>
+                    <a href="#">HEALTH CARE</a>
+                    <a href="#">LIBRARIES</a>
+                    <a href="#">ONLINE LEARNING</a>
+                    <a href="#">PENN GLOBAL</a>
+                </div>
 
                 <div>
-                    <p>CONTACT US</p>
-                    <p>MAPS</p>
-                    <p>PARKING</p>
+                    <p class="font-bold text-2xl">Penn's Heritage</p>
+                    <p class="italic ">As America’s first university, Penn has a history that dates back to 1740 and
+                        shares
+                        many ties with the colonial city of Philadelphia and the birth of our nation. </p>
+
+                    <button class="border-2 border-gray-400 rounded-full mt-4 py-4 px-8">OUR HISTORY</button>
                 </div>
+
             </div>
 
-            <div class="flex flex-col">
-                <a href="#">ALUMNI</a>
-                <a href="#">ATHLETICS</a>
-                <a href="#">DIVERSITY</a>
-                <a href="#">HEALTH CARE</a>
-                <a href="#">LIBRARIES</a>
-                <a href="#">ONLINE LEARNING</a>
-                <a href="#">PENN GLOBAL</a>
+            <div class="flex ">
+
+                <div class="flex gap-10 text-white items-center bg-black">
+                    <ion-icon name="arrow-up-outline" class="border-2 p-8 "></ion-icon>
+                    <p>BACK TO TOP</p>
+                </div>
+
+                <div class="flex bg-black  text-center  text-white">
+                    <a href="#" class="hover:underline">DISCLAIMER</a>
+                    <div class="h-[50px] w-[2px] bg-red-300"></div>
+                    <a href="#" class="hover:underline">EMERGENCY SERVICES</a>
+                    <div class="h-[50px] w-[2px] bg-red-300"></div>
+                    <a href="#" class="hover:underline">NON DISCRIMANAION</a>
+                    <div class="h-[50px] w-[2px] bg-red-300"></div>
+                    <a href="#" class="hover:underline">PRIVACY POLICY</a>
+                    <div class="h-[50px] w-[2px] bg-red-300"></div>
+                    <a href="#" class="hover:underline">REPORT ACCESSIBILITY ISSUES AND GET HELP</a>
+                    <div class="h-[50px] w-[2px] bg-red-300"></div>
+                    <a href="#" class="hover:underline">REPORT COPYRIGHT INFRINGEMENT</a>
+                </div>
+
             </div>
 
-            <div>
-                <p class="font-bold">Penn's Heritage</p>
-                <p class="italic ">As America’s first university, Penn has a history that dates back to 1740 and shares
-                     many ties with the colonial city of Philadelphia and the birth of our nation.  </p>
-
-                     <button>OUR HISTORY</button>
-            </div>
-
-        </div>
-        <div class="flex bg-black  text-center gap-4 text-white">
-            <a href="#" class="hover:underline">DISCLAIMER</a>
-            <div class="h-[50px] w-[2px] bg-red-300"></div>
-            <a href="#"  class="hover:underline">EMERGENCY SERVICES</a>
-            <div class="h-[50px] w-[2px] bg-red-300"></div>
-            <a href="#"  class="hover:underline">NON DISCRIMANAION</a>
-            <div class="h-[50px] w-[2px] bg-red-300"></div>
-            <a href="#"  class="hover:underline">PRIVACY POLICY</a>
-            <div class="h-[50px] w-[2px] bg-red-300"></div>
-            <a href="#"  class="hover:underline">REPORT ACCESSIBILITY ISSUES AND GET HELP</a>
-            <div class="h-[50px] w-[2px] bg-red-300"></div>
-            <a href="#"  class="hover:underline">REPORT COPYRIGHT INFRINGEMENT</a>
         </div>
     </footer>
 </body>
