@@ -785,6 +785,9 @@
   .h-\[50px\] {
     height: 50px;
   }
+  .h-full {
+    height: 100%;
+  }
   .h-screen {
     height: 100vh;
   }
@@ -797,17 +800,8 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
-  }
-  .w-\[5px\] {
-    width: 5px;
-  }
-  .w-\[20px\] {
-    width: 20px;
   }
   .w-\[2px\] {
     width: 2px;
@@ -1223,6 +1217,9 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 1;
@@ -1437,29 +1434,17 @@
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
   }
-  .bg-\[\#\] {
-    background-color: #;
-  }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
   }
-  .bg-\[https\:\/\/www\.upenn\.edu\/themes\/custom\/penn_global\/assets\/img\/\/footer-16\.png\] {
-    background-color: //www.upenn.edu/themes/custom/penn global/assets/img//footer-16.png;
-  }
-  .bg-\[ima\] {
-    background-color: ima;
-  }
-  .bg-\[image\] {
-    background-color: image;
-  }
-  .bg-\[src\=\"https\:\/\/www\.upenn\.edu\/themes\/custom\/penn_global\/assets\/img\/\/footer-16\.png\"\] {
-    background-color: src="https://www.upenn.edu/themes/custom/penn global/assets/img//footer-16.png";
-  }
-  .bg-\[srchttps\:\/\/www\.upenn\.edu\/themes\/custom\/penn_global\/assets\/img\/\/footer-16\.png\] {
-    background-color: //www.upenn.edu/themes/custom/penn global/assets/img//footer-16.png;
-  }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
+  }
+  .bg-black {
+    background-color: var(--color-black);
+  }
+  .bg-red-200 {
+    background-color: var(--color-red-200);
   }
   .bg-red-300 {
     background-color: var(--color-red-300);
@@ -1645,6 +1630,12 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
+  }
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
+  }
   .text-center {
     text-align: center;
   }
@@ -1687,9 +1678,28 @@
   .align-top {
     vertical-align: top;
   }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .leading-12 {
+    --tw-leading: calc(var(--spacing) * 12);
+    line-height: calc(var(--spacing) * 12);
+  }
+  .leading-16 {
+    --tw-leading: calc(var(--spacing) * 16);
+    line-height: calc(var(--spacing) * 16);
+  }
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-extralight {
+    --tw-font-weight: var(--font-weight-extralight);
+    font-weight: var(--font-weight-extralight);
   }
   .text-balance {
     text-wrap: balance;
@@ -2342,6 +2352,10 @@
   initial-value: 0;
 }
 @property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
